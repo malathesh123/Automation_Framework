@@ -18,9 +18,9 @@ public class Addvalue {
 			FileInputStream fis=new FileInputStream("./excel/Book2.xlsx");
 			Workbook book = WorkbookFactory.create(fis);
 			Sheet sheet = book.createSheet("selinium");
-			//Row row = sheet.createRow(3);
-			//Cell cell = row.createCell(1);
-			//cell.setCellValue("xcvbnm");
+		    Row row = sheet.createRow(3);
+			Cell cell = row.createCell(1);
+			cell.setCellValue("xcvbnm");
 			FileOutputStream fio=new FileOutputStream("./excel/Book2.xlsx");
 			book.write(fio);
 	}
